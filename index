@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokyo Trip</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Tokyo Trip 2025</h1>
+    <nav>
+      <ul>
+        <li><a href="#day1">Day 1</a></li>
+        <li><a href="#day2">Day 2</a></li>
+        <li><a href="#day3">Day 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="day1">
+      <h2>Day 1 - 아사쿠사 & 시부야</h2>
+      <p>닌자카페 → 시부야 숙소 → 타워레코드 → 몬자야끼 → 돈키호테 → 라이브 밴드 공연</p>
+    </section>
+
+    <section id="day2">
+      <h2>Day 2 - 신주쿠 & JDM 투어</h2>
+      <p>유니클로 오픈런 → 신주쿠 구경 → JDM 자동차 투어 → 가부키초</p>
+    </section>
+
+    <section id="day3">
+      <h2>Day 3 - 자유 일정</h2>
+      <p>도쿄 시내 산책, 쇼핑, 귀국 준비</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Tokyo Trip by nnaeueun</p>
+  </footer>
+</body>
+</html>
