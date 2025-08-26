@@ -1,44 +1,56 @@
-/* 초기화 */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
+/* 기본 스타일 */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
-  padding: 20px;
-  background-color: #fdfdfd;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
   color: #333;
 }
 
+/* 헤더 */
 header {
   text-align: center;
-  margin-bottom: 20px;
+  padding: 40px 20px 20px;
+  background: #222;
+  color: #fff;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
 }
 
+header p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #bbb;
+}
+
+/* 네비게이션 */
 nav ul {
+  list-style: none;
+  padding: 0;
   display: flex;
   justify-content: center;
-  list-style: none;
   flex-wrap: wrap;
 }
 
 nav ul li {
-  margin: 5px 10px;
+  margin: 5px 15px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #0077cc;
+  color: #66ccff;
   font-weight: bold;
 }
 
+/* 본문 */
 main {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
 section {
@@ -47,31 +59,31 @@ section {
 
 section h2 {
   margin-bottom: 10px;
-  font-size: 1.5rem;
-  color: #222;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
 }
 
-section p {
-  margin-bottom: 10px;
+section ul {
+  list-style: disc inside;
+  margin-left: 10px;
 }
 
+/* 푸터 */
 footer {
   text-align: center;
-  margin-top: 40px;
+  padding: 20px;
   font-size: 0.9rem;
   color: #777;
+  background: #f0f0f0;
 }
 
 /* 반응형 */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  main {
-    padding: 0 10px;
+  section h2 {
+    font-size: 1.3rem;
   }
 }
