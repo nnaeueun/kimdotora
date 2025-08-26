@@ -12,8 +12,7 @@ background-repeat : repeat;
 header {
   text-align: center;
   padding: 40px 20px 20px;
-  background: #222;
-  color: #fff;
+  background-image: url('img1.jpg');
 }
 
 header h1 {
