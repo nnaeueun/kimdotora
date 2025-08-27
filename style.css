@@ -12,6 +12,10 @@ body {
   padding: 0;
   background-image: url('img4.jpeg');
   color: #ADD8E6; 
+  text-shadow: 
+    0 0 2px #FF69B4,
+    0 0 5px #FF69B4,
+    0 0 10px #FF69B4;
  background-repeat : repeat;
  
 }
