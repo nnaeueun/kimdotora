@@ -4,32 +4,6 @@
     animation: blink-effect 1s step-end infinite; 
 }
 
-/* 리모콘 스타일 */
-.remote-control {
-  position: fixed;
-  bottom: 20px;       /* 화면 하단에서 간격 */
-  right: 20px;        /* 화면 오른쪽에서 간격 */
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.remote-control a {
-  background: #333;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 15px;
-  border-radius: 8px;
-  font-size: 14px;
-  text-align: center;
-  transition: background 0.3s;
-  font-family: 'Courier New', monospace; /* B급 감성 폰트 */
-}
-
-.remote-control a:hover {
-  background: #555;
-}
-
 /* 기본 스타일 */
 body {
   font-family: 'Dotum', 'Gulim', sans-serif;
