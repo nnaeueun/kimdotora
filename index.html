@@ -18,13 +18,36 @@
   </script>
 </head>
 <body id = '#top'>
-  <audio id = 'audioPlayer' controls autoplay loop>
-        <source src="에반게리온.mp3" type="audio/mpeg">
-        <source src="flymetothemoon.mp3" type="audio/mpeg">
-        <source src="kommsussertod.mp3" type="audio/mpeg">
-        <source src="혼의루프란.mp3" type="audio/mpeg">
-        지원하지않는 브라우접니다.ㅋ
-    </audio>
+  <audio id = 'audioPlayer' controls autoplay></audio>
+  <script>
+  // 재생할 곡 리스트
+  const tracks = [
+    "에반게리온.mp3",
+    "flymetothemoon.mp3",
+    "kommsussertod.mp3",
+    "혼의루프란.mp3"
+  ];
+
+  let audio = document.getElementById("audioPlayer");
+
+  // 현재 곡을 무작위로 선택
+  function getRandomTrack() {
+    return tracks[Math.floor(Math.random() * tracks.length)];
+  }
+
+  // 랜덤으로 곡 재생
+  function playRandom() {
+    let track = getRandomTrack();
+    audio.src = track;
+    audio.play();
+  }
+
+  // 곡이 끝나면 다시 랜덤 재생
+  audio.addEventListener("ended", playRandom);
+
+  // 페이지 처음 열리면 바로 랜덤 재생 시작
+  playRandom();
+</script>
   
   <header>
     <h1 class = 'blink'>쨍♡난 도쿄 여행</h1>
@@ -46,11 +69,12 @@
       <h2>항공/숙소</h2>
         <!-- 비밀번호 입력창 -->
         <div>
-          <input type="password" id="password" placeholder="비밀번호 입력">
+          <input type="password" id="password" placeholder="비밀번호">
           <button onclick="checkPassword()">확인</button>
         </div>
         <!-- 숨겨진 영역 -->
         <div id="secret" style="display:none; margin-top:20px;">
+          <h2>비행기 정보</h2>
           <p>✈️ 인천 → 도쿄 / 9월 15일 월요일 08:15 출발</p>
           <p>✈️ 도쿄 → 인천 / 9월 19일 금요일 19:05 출발</p>
       
