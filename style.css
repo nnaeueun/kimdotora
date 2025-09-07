@@ -17,6 +17,7 @@ body {
 header {
   background-image: url('img1.jpg');
   text-align: center;
+  height: 400px;
   padding: 40px 20px 20px;
 }
 
