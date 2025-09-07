@@ -33,13 +33,12 @@ header h1 {
 
 /* 네비게이션 */
 nav ul {
-  border: 1px solid black; /*네모 테두리*/
   list-style: none;
   padding: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background: rgba(0, 0, 0, 0.5); /* 투명+어두운 배경 */
+  background: rgba(0, 0, 0, 0.7); /* 투명+어두운 배경 */
 }
 
 nav ul li {
