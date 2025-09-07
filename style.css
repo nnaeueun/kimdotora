@@ -23,7 +23,7 @@ header {
   display: flex;
   justify-content: center;  /* 가로 가운데 */
   align-items: center;      /* 세로 가운데 */
-  height: 350px;            /* 높이*/
+  height: 250px;            /* 높이*/
   padding: 40px 20px 20px;
   color: #ADD8E6; 
  text-shadow: 
