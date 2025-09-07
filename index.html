@@ -5,6 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <script>
+    function checkPassword() {
+      const input = document.getElementById("password").value;
+      const content = document.getElementById("secret");
+      if (input === "1123") {  // master가 설정할 비밀번호
+        content.style.display = "block";
+      } else {
+        alert("비밀번호가 틀렸습니다.");
+      }
+    }
+  </script>
 </head>
 <body>
 
