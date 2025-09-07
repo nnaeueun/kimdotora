@@ -69,6 +69,12 @@ section ul {
   margin-left: 10px;
 }
 
+article {
+float: left;
+padding: 20px;
+width: 70%;
+text-align: center;
+}
 /* 푸터 */
 footer {
   text-align: center;
