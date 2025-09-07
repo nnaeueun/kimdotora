@@ -9,22 +9,55 @@
 <body>
 
 <header>
-  <h2>Cities</h2>
+  <h1>쨍♡난 도쿄 여행</h1>
 </header>
 
 <section>
-  <nav>
-    <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="#hidden">항공/숙소</a></li>
+        <li><a href="#day1">9월 15일 (월)</a></li>
+        <li><a href="#day2">9월 16일 (화)</a></li>
+        <li><a href="#day3">9월 17일 (수)</a></li>
+        <li><a href="#day4">9월 18일 (목)</a></li>
+        <li><a href="#day5">9월 19일 (금)</a></li>
+      </ul>
+    </nav>
   
   <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    <aside id="hidden">
+          <h2>항공/숙소</h2>
+            <!-- 비밀번호 입력창 -->
+            <div>
+              <input type="password" id="password" placeholder="비밀번호">
+              <button onclick="checkPassword()">확인</button>
+            </div>
+            <!-- 숨겨진 영역 -->
+            <div id="secret" style="display:none; margin-top:20px;">
+              <h2>비행기 정보</h2>
+              <p>✈️ 인천(T2) → 나리타 / 9월 15일 월요일 08:15 출발</p>
+              <p>✈️ 나리타 → 인천(T2) / 9월 19일 금요일 19:05 출발</p>
+              <a href="https://mail.google.com/mail/mu/mp/515/#cv/tokyovoucher/1988d167a6b8b844">✈️ 비행기 예약 내역</a>
+          
+              <h2>숙소 정보</h2>
+              <p>🏨 월,화,수 : 아사쿠사 에어비앤비</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103661.14071897719!2d139.72809185820313!3d35.716118000000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ec1f4a38893%3A0xd3f6485878320561!2zMy1jaMWNbWUtMi0xIEFzYWt1c2EsIFRhaXRvIENpdHksIFRva3lvIDExMS0wMDMyIOydvOuzuA!5e0!3m2!1sko!2skr!4v1757074989190!5m2!1sko!2skr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <p>🏨 수,목,금: 시부야 Hotel Will</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207419.24212882234!2d139.570084328125!3d35.67883246763549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188caa2fdbf35d%3A0x8a3c21a6591ed9cb!2sHotel%20Will!5e0!3m2!1sko!2skr!4v1757075080521!5m2!1sko!2skr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </aside>
+    <aside id="day1">
+          <h2>9월 15일 (월)</h2>
+          <ul>
+            <li>비행기</li>
+            <li>스카이 액세스_게이세이특급 타고 아사쿠사역 가기</li>
+            <a href="https://blog.naver.com/c131444/223944626950">나리타공항에서 아사쿠사역까지 엄청 잘 정리된 블로그</a>
+            <li>아사쿠사 숙소 체크인</li>
+            <li>헬로사이클</li>
+            <li>센소지 구경</li>
+          </ul>
+    </aside>
+    
   </article>
 </section>
 
