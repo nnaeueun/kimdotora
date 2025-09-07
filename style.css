@@ -32,6 +32,16 @@ header {
     0 0 10px #FF69B4;
 }
 
+header h1 {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
