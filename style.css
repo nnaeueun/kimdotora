@@ -77,40 +77,11 @@ footer {
 }
 
 /* 반응형 */
-/* 큰 화면(데스크탑) → 세로 메뉴 */
-@media (min-width: 768px) {
-  body {
-    flex-direction: row;
-  }
-
-  .navbar {
-    width: 200px;
-    height: 100vh;
-  }
-
-  .navbar ul {
-    flex-direction: column; /* 세로 정렬 */
-  }
-
-  .navbar a {
-    border-bottom: 1px solid #ddd;
-  }
-
-  main {
-    flex: 1;
-    padding: 20px;
-  }
-}
-
-/* 작은 화면(모바일) → 가로 메뉴 */
-@media (max-width: 767px) {
-  .navbar ul {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .navbar a {
-    border-bottom: none;
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+section h2 {
+    font-size: 1.3rem;
     border-right: 1px solid #ddd;
   }
 
