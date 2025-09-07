@@ -13,11 +13,7 @@ body {
  /*  font-family: 'Dotum', 'Gulim', sans-serif;*/
   line-height: 1.6;
    background-image: url('img4.jpeg');
-   color: #ADD8E6; 
-   text-shadow: 
-    0 0 2px #FF69B4,
-    0 0 5px #FF69B4,
-    0 0 10px #FF69B4;
+
  background-repeat : repeat;
 }
 
@@ -29,6 +25,11 @@ header {
   align-items: center;      /* 세로 가운데 */
   height: 350px;            /* 높이*/
   padding: 40px 20px 20px;
+  color: #ADD8E6; 
+ text-shadow: 
+    0 0 2px #FF69B4,
+    0 0 5px #FF69B4,
+    0 0 10px #FF69B4;
 }
 
 /* Create two columns/boxes that floats next to each other */
