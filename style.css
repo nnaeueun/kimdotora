@@ -38,7 +38,7 @@ nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background: rgba(0, 0, 0, 0.7); /* 투명+어두운 배경 */
+  background: rgba(0, 0, 0, 0.2); /* 투명+어두운 배경 */
 }
 
 nav ul li {
