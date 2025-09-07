@@ -4,84 +4,95 @@
     animation: blink-effect 1s step-end infinite; 
 }
 
-* {
-  box-sizing: border-box;
-}
-
+/* 기본 스타일 */
 body {
-  font-family: 'Gulim', 'Gulim', sans-serif;
- /*  font-family: 'Dotum', 'Gulim', sans-serif;*/
+  font-family: 'Dotum', 'Gulim', sans-serif;
   line-height: 1.6;
-   background-image: url('img4.jpeg');
-
- background-repeat : repeat;
-}
-
-/* Style the header */
-header {
-  background-image: url('img1.jpg');
-  display: flex;
-  justify-content: center;  /* 가로 가운데 */
-  align-items: center;      /* 세로 가운데 */
-  height: 250px;            /* 높이*/
-  padding: 40px 20px 20px;
+  margin: 0;
+  padding: 0;
+  background-image: url('img4.jpeg');
   color: #ADD8E6; 
- text-shadow: 
+  text-shadow: 
     0 0 2px #FF69B4,
     0 0 5px #FF69B4,
     0 0 10px #FF69B4;
+ background-repeat : repeat;
+
+}
+
+/* 헤더 */
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background-image: url('img1.jpg');
 }
 
 header h1 {
-  animation: blink 1s step-start infinite;
+  font-size: 4.4rem;
+  margin-bottom: 10px;
 }
 
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
+header p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #B0C4DE;
 }
 
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
+/* 네비게이션 */
 nav ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
+nav ul li {
+  margin: 5px 15px;
 }
 
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
+nav ul li a {
+  text-decoration: none;
+  color: #66ccff;
+  font-weight: bold;
 }
 
-/* Style the footer */
+/* 본문 */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+section ul {
+  list-style: disc inside;
+  margin-left: 10px;
+}
+
+/* 푸터 */
 footer {
-  background-color: #777;
-  padding: 10px;
   text-align: center;
-  color: white;
+  padding: 20px;
+  font-size: 0.9rem;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
+/* 반응형 */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+  section h2 {
+    font-size: 1.3rem;
   }
 }
