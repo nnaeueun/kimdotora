@@ -4,15 +4,13 @@ body {
   font-family: 'Dotum', 'Gulim', sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   background-image: url('img4.jpeg');
-  color: #ADD8E6; 
+  background-repeat : repeat;
   text-shadow: 
     0 0 2px #FF69B4,
     0 0 5px #FF69B4,
     0 0 10px #FF69B4;
- background-repeat : repeat;
-
 }
 
 /* 헤더 */
@@ -21,15 +19,14 @@ header {
   padding: 40px 20px 20px;
   background-image: url('img1.jpg');
 }
-
+/* 제목 깜빡이기 */
 header h1 {
-  font-size: 4.4rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
   animation: blink 1s step-start infinite;
-  @keyframes blink {
-    50% {
-      opacity: 0;
-    }
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
 
@@ -79,7 +76,9 @@ section ul {
 footer {
   text-align: center;
   padding: 20px;
+  background: #f5f5f5;
   font-size: 0.9rem;
+  margin-top: 40px;
 }
 
 /* 반응형 */
