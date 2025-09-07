@@ -83,19 +83,9 @@ footer {
 }
 
 /* 반응형 */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 1.6rem;
-section h2 {
-    font-size: 1.3rem;
-    border-right: 1px solid #ddd;
-  }
-
-  .navbar li:last-child a {
-    border-right: none;
-  }
-
-  main {
-    padding: 15px;
-  }
+@media (max-width: 500px) {
+nav, article {
+    width: 100%;
+    height: auto;
+}
 }
