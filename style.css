@@ -16,8 +16,10 @@ body {
 /* Style the header */
 header {
   background-image: url('img1.jpg');
-  text-align: center;
-  height: 400px;
+  display: flex;
+  justify-content: center;  /* 가로 가운데 */
+  align-items: center;      /* 세로 가운데 */
+  height: 350px;            /* 높이*/
   padding: 40px 20px 20px;
 }
 
