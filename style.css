@@ -75,6 +75,34 @@ section ul {
   margin-left: 10px;
 }
 
+.gundam-schedule {
+  background-color: rgba(0,0,0,0.05);
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 15px 20px;
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+}
+
+.gundam-schedule h2 {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+.gundam-schedule h3 {
+  color: #3333cc;
+  margin-top: 15px;
+}
+
+.gundam-schedule ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.gundam-schedule p {
+  margin: 5px 0;
+}
+
 /* 푸터 */
 footer {
   text-align: center;
