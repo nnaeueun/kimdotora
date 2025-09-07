@@ -22,7 +22,7 @@ header {
 }
 /* 제목 깜빡이기 */
 header h1 {
-  font-size: 2rem;
+  font-size: 3.3rem;
   animation: blink 1s step-start infinite;
 }
 @keyframes blink {
