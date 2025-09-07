@@ -72,6 +72,7 @@ section h2 {
 
 section ul {
   list-style: disc inside;
+  background: rgba(255, 255, 255, 0.8); /*밝은 배경*/
   margin-left: 10px;
 }
 
