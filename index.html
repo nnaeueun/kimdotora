@@ -18,41 +18,9 @@
   </script>
 </head>
 <body id = '#top'>
-  <audio id = 'audioPlayer' controls autoplay></audio>
-  <script>
-      const tracks = [
-        "에반게리온.mp3",
-        "flymetothemoon.mp3",
-        "kommsussertod.mp3",
-        "혼의루프란.mp3"
-      ];
-    
-      let audio = document.getElementById("audioPlayer");
-      let lastTrack = null; // 직전 곡 기록
-    
-      // 랜덤 트랙 선택 (바로 전 곡은 제외)
-      function getRandomTrack() {
-        let track;
-        do {
-          track = tracks[Math.floor(Math.random() * tracks.length)];
-        } while (track === lastTrack && tracks.length > 1);
-        lastTrack = track;
-        return track;
-      }
-    
-      // 랜덤 재생
-      function playRandom() {
-        let track = getRandomTrack();
-        audio.src = track;
-        audio.play();
-      }
-    
-      // 한 곡 끝나면 다음 랜덤 재생
-      audio.addEventListener("ended", playRandom);
-    
-      // 페이지 처음 시작 시 랜덤 재생
-      playRandom();
-  </script>
+ <audio id="audioPlayer" controls loop autoplay>
+  <source src="에반게리온.mp3" type="audio/mpeg">
+ </audio>
   
   <header>
     <h1 class = 'blink'>쨍♡난 도쿄 여행</h1>
